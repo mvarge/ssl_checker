@@ -1,5 +1,5 @@
 # Python SSL Cert Date Checker
-Simple and Native Python SSL Cert Date Exçpiration Checker
+Simple and Native Python SSL Cert Date Expiration Checker
 
 ## About
 This program is written aiming to use the most simple and native tools that are available with Python in order to check any SSL Certificate expiration date. More validations are possible 
