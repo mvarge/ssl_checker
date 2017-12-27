@@ -13,8 +13,7 @@ class Certificate(object):
         self.error = ''
 
     def load(self, data):
-        ''' Dinamically populates object with all certificate info and
-        marks it as valid. '''
+        ''' Dinamically populates object with all certificate info and marks it as valid, in case of success. '''
         for k, v in data.iteritems():
             setattr(self, k, v)
         self.datetime = datetime.strptime(self.notAfter, '%b %d %H:%M:%S %Y %Z')
@@ -22,8 +21,7 @@ class Certificate(object):
 
 
 def get_cert(host):
-    ''' Returns a Certificate object formed with all values from the
-    certificate '''
+    ''' Returns a Certificate object formed with all values from the cert '''
     certificate = Certificate()
     context = ssl.create_default_context()
     for ca in extra_ca:
