@@ -5,7 +5,7 @@ Simple and Native Python SSL Cert Date Expiration Checker
 This program is written aiming to use the most simple and native tools that are available with Python in order to check any SSL Certificate expiration date. It also translates the string used for the current expiration into a datetime one, so calculations can be made.
 
 ## Further Use
-The `get_cert()` function returns a Certificate object that can be used to any other certificate validation besides an expiration date check. For using it just iterate over the object to understand its attributes, that are dinamically generated.
+The `get_cert()` function returns a Certificate object that can be used to any other certificate validation besides an expiration date check. For using it just iterate over the object to understand its attributes, that are dinamically generated. 
 
 ## Examples
 
